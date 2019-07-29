@@ -29,7 +29,8 @@ for line in f:
 f.close()
 
 def get_summary(text,k):
-    
+	
+    k = int(k)
     sentences = text.split(".")
 
     sentences = [j.strip() for j in sentences]
@@ -63,7 +64,10 @@ def get_summary(text,k):
         for ki in range(k):
             
             su += " " + ranked_sentences[ki][1]
-    new.append(su)
+    
     
     return su
 
+if __name__ == "__main__":
+	import sys
+	print(get_summary(sys.argv[2],sys.argv[1]))
