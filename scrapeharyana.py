@@ -1,5 +1,6 @@
 ##code for scraping Haryana assembly elections Who's Who's data
 ##Mukul
+##Put all the pdf files to be scraped in the folder/repository and execute this program
 
 import pdftotext
 import pandas as pd
